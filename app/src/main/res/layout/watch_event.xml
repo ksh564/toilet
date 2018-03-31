@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#43e6b6"
+        >
+    </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+
+                   android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="#43e6b6"
+                    android:layout_height="wrap_content"
+                    android:text="이벤트 "
+                    />
+
+
+            </LinearLayout>
+            <!--<View-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="#FF8224"></View>-->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical"
+                android:id="@+id/parent">
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:background="@drawable/grey_sharp_border"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="요청자"
+                        android:id="@+id/textView10"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아이디"
+                        android:id="@+id/watch_event_nick"
+                        android:layout_marginRight="19dp"
+                        android:layout_marginEnd="19dp"
+                        android:layout_alignTop="@+id/textView10"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:background="@drawable/grey_sharp_border"
+                    android:id="@+id/timepicker"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="요청시간"
+                        android:id="@+id/enroll_event_dayview"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2017/1/1 10:08:30"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/watch_event_enroll_dayview"
+                        android:layout_alignTop="@+id/enroll_event_dayview"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:background="@drawable/grey_sharp_border"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="마감시간"
+
+                        android:id="@+id/dead_event_dayview"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2017/1/1 10:08:30"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/watch_event_dead_dayview"
+                        android:layout_alignTop="@+id/dead_event_dayview"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/grey_sharp_border">
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="요청장소"
+
+                        android:id="@+id/textView6"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="서울시 관악구 대학20길 27 현대아파트"
+                        android:textSize="10dp"
+                        android:layout_below="@+id/textView6"
+                        android:layout_alignLeft="@+id/textView6"
+                        android:layout_alignStart="@+id/textView6"
+                        android:id="@+id/watch_event_address"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:text="숭실대입구역"
+
+
+                        android:id="@+id/watch_current_name"
+                        android:layout_alignTop="@+id/textView6"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="20dp"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:background="@drawable/grey_sharp_border"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="사례비"
+
+                        android:id="@+id/textView7"/>
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+
+                        android:gravity="right"
+                        android:layout_alignParentTop="true"
+                        android:inputType="number"
+                        android:layout_toLeftOf="@+id/textView8"
+                        android:layout_toStartOf="@+id/textView8"
+                        android:id="@+id/watch_reward_textview"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="원"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_alignTop="@+id/textView7"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/textView8"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:background="@drawable/grey_sharp_border"
+                    android:layout_height="200dp">
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:textSize="15dp"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:layout_height="200dp"
+                        android:id="@+id/watch_event_content"/>
+                </LinearLayout>
+                <FrameLayout
+                    android:layout_width="300dp"
+                    android:layout_height="150dp">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이벤트 수락하기"
+                        android:visibility="invisible"
+                        android:layout_margin="20dp"
+                        android:background="#FFD9EC"
+                        android:id="@+id/event_accept"
+                        android:layout_gravity="center"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:text="진행중"
+                        android:id="@+id/event_ing"
+                        android:layout_margin="20dp"
+                        android:background="#FFE400"
+                        android:layout_gravity="center"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_margin="20dp"
+                        android:id="@+id/event_done"
+                        android:text="이벤트 완료"
+                        android:background="#D5D5D5"
+                        android:layout_gravity="center"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:id="@+id/help_done"
+                        android:layout_margin="10dp"
+                        android:text="도움 완료"
+                        android:background="#ABF200"
+                        android:layout_gravity="left|center_vertical"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:text="도움 거절"
+                        android:layout_margin="10dp"
+                        android:id="@+id/help_disconnect"
+                        android:background="#FF0000"
+                        android:layout_gravity="right|center_vertical"/>
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            </ScrollView>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

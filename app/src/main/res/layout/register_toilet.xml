@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#43e6b6"
+        >
+    </android.support.v7.widget.Toolbar>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <!--<View-->
+                <!--android:layout_width="300dp"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:background="#FF0000"-->
+                <!--android:layout_gravity="center_horizontal" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="제목"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30dp"
+
+                    android:id="@+id/toilet_register_name" />
+
+
+
+            </LinearLayout>//제목 레이아웃
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:gravity="top"
+                    android:maxLength="80"
+                    android:textSize="16dp"
+                    android:hint="화장실에 대해 간단한 설명을 적어주세요.(80자이내)"
+                    android:id="@+id/toilet_register_info"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"/>
+
+
+            </LinearLayout>//중간 점프줄
+            <LinearLayout
+                android:layout_width="match_parent"
+                 android:layout_weight="1"
+                android:layout_height="300dp"
+
+                android:id="@+id/content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_marginTop="5dp">-->
+                        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:id="@+id/xylayout"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="100dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="35dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+                            <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+                            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:text="위도:"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:textSize="15dp"&ndash;&gt;-->
+                                <!--&lt;!&ndash;/>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:text="127.04648751545072"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:id="@+id/toilet_register_ypos" />&ndash;&gt;-->
+
+
+                        <!--&lt;!&ndash;</LinearLayout> //위도 레이아웃&ndash;&gt;-->
+                        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:id="@+id/xylayout2"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="100dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="35dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+                            <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+                            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:text="경도:"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:textSize="15dp"&ndash;&gt;-->
+                                <!--&lt;!&ndash;/>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:text="127.04648751545072"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:id="@+id/toilet_register_xpos" />&ndash;&gt;-->
+
+
+                        <!--&lt;!&ndash;</LinearLayout> //경도레이아웃&ndash;&gt;-->
+                    <!--</LinearLayout> //위도경도레이아웃-->
+                    <LinearLayout
+                        android:id="@+id/toilet_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="개방형태:"
+                            android:textSize="15dp"
+                            />
+                        <Spinner
+                            android:id="@+id/toilet_aname_spinner"
+                            android:layout_width="200dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginTop="7dp"></Spinner>
+
+
+                    </LinearLayout> //경도레이아웃
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="화장실 종류:"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp" />
+                    <Spinner
+                        android:id="@+id/toilet_spinner"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="48dp"
+                        android:layout_marginTop="7dp"></Spinner>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="장애인   시설:"
+                        android:layout_marginLeft="20dp"/>
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_wheel"
+                        android:layout_marginLeft="35dp"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:layout_width="100dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/radio_wheel_ok"
+                            android:text="예"
+                            android:textSize="12dp"
+                            />
+                        <RadioButton
+                            android:layout_width="100dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/radio_wheel_no"
+                            android:textSize="12dp"
+                            android:text="아니오"/>
+
+                    </RadioGroup>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비데:"
+                    android:layout_marginLeft="20dp"
+                    />
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_bidet"
+                        android:layout_marginLeft="85dp"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:layout_width="100dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/radio_bidet_ok"
+                            android:text="예"
+                            android:textSize="12dp"
+                            />
+                        <RadioButton
+                            android:layout_width="100dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/radio_bidet_no"
+                            android:textSize="12dp"
+                            android:text="아니오"/>
+
+
+                    </RadioGroup>
+
+
+
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="기저귀 교환대:"
+                        />
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_diaper"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:layout_width="100dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/radio_diaper_ok"
+                            android:text="예"
+                            android:textSize="12dp"
+                            />
+                        <RadioButton
+                            android:layout_width="100dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/radio_diaper_no"
+                            android:textSize="12dp"
+                            android:text="아니오"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background="#FF0000"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:src="@drawable/camera"-->
+                <!--/>-->
+            <!--<ImageView-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:src="@drawable/album"-->
+                <!--/>-->
+
+
+        <!--</LinearLayout>-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background="#FF0000"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+
+        <!--<TableLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="300dp"-->
+            <!--android:background="#999999"-->
+            <!--android:stretchColumns="*"-->
+            <!--&gt;-->
+            <!--<TableRow-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#CEFBC9"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/ic_launcher"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#CEFBC9"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/ic_launcher"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#CEFBC9"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/ic_launcher"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+            <!--</TableRow>-->
+            <!--<TableRow-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#CEFBC9"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/ic_launcher"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#CEFBC9"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/ic_launcher"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#CEFBC9"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/ic_launcher"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+            <!--</TableRow>-->
+            <!--<TableRow-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#CEFBC9"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/ic_launcher"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#CEFBC9"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/ic_launcher"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#CEFBC9"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/ic_launcher"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+            <!--</TableRow>-->
+
+
+
+        <!--</TableLayout>-->
+
+
+        </LinearLayout>
+
+</ScrollView>
+    </LinearLayout>
+

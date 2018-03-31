@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#43e6b6"
+        >
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="0.985"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="wrap_content"
+                android:gravity="top"
+                android:background="@null"
+                android:layout_margin="20dp"
+                android:id="@+id/opinion_edit"
+                android:hint="이 화장실에 대한 느낀점,다른 사용자에게 알려주고 싶은 정보등을 적어주세요 평가가 쌓일수록, 다른 이용자들도 쾌적하게 이용할 수 있습니다."
+                android:layout_height="280dp" />
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/uploadtest"-->
+                <!--/>-->
+            <GridView
+                android:layout_width="match_parent"
+                android:numColumns="3"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:id="@+id/gridview"
+                android:stretchMode="columnWidth"
+                android:layout_height="400dp">
+
+            </GridView>
+        </LinearLayout>
+
+
+      
+
+
+
+
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#00000000"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_height="20dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="285dp"
+            android:src="@drawable/new_write_button"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="20dp"
+            android:id="@+id/write_opinion_textnum"
+            android:layout_marginLeft="2dp"
+            android:text="0"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/new_gallery_button"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="20dp"
+            android:layout_marginLeft="2dp"
+            android:text="0"
+
+            android:layout_height="20dp"
+            android:id="@+id/write_opinion_photonum"/>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#43e6b6"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.015"
+        android:orientation="horizontal">
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:stepSize="0.5"
+
+            android:layout_marginLeft="20dp"
+
+            android:id="@+id/opinion_rating"
+            android:rating="5"
+            android:layout_height="wrap_content" />
+
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+
+            android:scaleType="fitXY"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/new_gallery_button"
+            android:id="@+id/insert_gallery_icon" />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:layout_marginTop="5dp"
+          android:layout_marginLeft="13dp"
+            android:src="@drawable/new_camera_button"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

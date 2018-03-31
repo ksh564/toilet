@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#43e6b6"
+    >
+
+    </android.support.v7.widget.Toolbar>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:id="@+id/information_scroll"
+       android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#43e6b6"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="제목"
+                android:id="@+id/inform_title" />
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="30dp"-->
+
+                <!--android:textSize="20dp"-->
+                <!--android:text="별점"-->
+                <!--android:layout_marginRight="20dp"-->
+
+                <!--android:layout_alignTop="@+id/inform_title"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:id="@+id/infrom_rating" />-->
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="left"
+                android:textSize="10dp"
+                android:id="@+id/inform_informaiton"
+                android:text="이 쪽은 화장실에 대한 간단한 설명이 있을 것 입니다."
+
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/modify"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:id="@+id/information_reply"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/reple"
+                    android:id="@+id/reply_image"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/watch_map"
+                    android:layout_marginRight="20dp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:src="@drawable/gps_marker"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/gps_marker"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="서울시 도봉구 창4동 개나리아파트 101동 201호."
+                    android:layout_weight="1"
+                    android:id="@+id/toilet_info_add"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/toilet_paper"
+                    android:layout_marginLeft="17dp"/>
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="민간개방화장실"
+                    android:layout_weight="0.6"
+                    android:id="@+id/toilet_info_aname"
+                    android:layout_marginLeft="3dp"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            >
+            <FrameLayout
+                android:layout_width="47dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="62dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:id="@+id/info_mantoiletimg"
+                    android:src="@drawable/new_man"
+                    />
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:visibility="visible"
+                    android:id="@+id/info_man_notoiletimg"
+                    android:src="@drawable/new_man_no"
+                    android:layout_gravity="center" />
+
+                </FrameLayout>
+            <FrameLayout
+                android:layout_width="47dp"
+                android:layout_height="62dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:id="@+id/info_womantoiletimg"
+                    android:src="@drawable/new_woman"
+                    />
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:visibility="visible"
+                    android:id="@+id/info_woman_notoiletimg"
+                    android:src="@drawable/new_womna_no"
+                    android:layout_gravity="center" />
+
+                </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="47dp"
+                android:layout_height="62dp"
+                android:id="@+id/toiletframe"
+
+
+                >
+
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/info_toiletimg"
+                    android:src="@drawable/man_woman_ok"
+                    android:visibility="invisible"
+                    />
+
+                <ImageView
+
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/man_woman"
+                    android:id="@+id/info_unisextoiletimg"
+                    android:visibility="visible"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+
+                android:layout_width="47dp"
+                android:layout_weight="1"
+                android:layout_height="62dp"
+                android:layout_toRightOf="@+id/toiletframe"
+                >
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+
+                    android:id="@+id/wheelok"
+                    android:src="@drawable/wheel_ok"
+                    />
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:visibility="visible"
+                    android:id="@+id/wheelno"
+                    android:src="@drawable/wheel_no"
+                    android:layout_gravity="center" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="47dp"
+                android:layout_height="62dp"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:id="@+id/bidet_ok"
+                    android:src="@drawable/bidet_ok"
+                    />
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:visibility="visible"
+                    android:id="@+id/bidet_no"
+                    android:src="@drawable/bidet_no"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="47dp"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:id="@+id/diaper_ok"
+                    android:src="@drawable/diaper_ok"
+                    />
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:visibility="visible"
+                    android:id="@+id/diaper_no"
+                    android:src="@drawable/diaper_no"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A6A6A6"
+            android:orientation="vertical">
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:gravity="right"-->
+                <!--android:layout_weight="1">-->
+                <!--<RatingBar-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:id="@+id/Toilet_Rating"-->
+                    <!--style="?android:ratingBarStyleSmall"-->
+
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:rating="5"-->
+                    <!--android:stepSize="0.5"-->
+                    <!--/>-->
+
+
+
+            <!--</LinearLayout>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="60dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="도움이 필요해요"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:id="@+id/textView4"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/new_write"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitXY"
+                    android:background="#00000000"
+                    android:id="@+id/enroll_event_btn"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/textView9"
+                    android:layout_toStartOf="@+id/textView9"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="등록"
+                    android:textColor="#000000"
+                    android:id="@+id/textView9"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="17dp"
+                    android:layout_alignTop="@+id/textView4"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+
+
+            </RelativeLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="wrap_content">
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:dividerHeight="15dp"
+                    android:divider="#ffffff"
+                    android:id="@+id/event_listview0">
+
+                </ListView>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_margin="18dp"
+                    android:dividerHeight="15dp"
+                    android:divider="#ffffff"
+                    android:id="@+id/event_listview">
+
+                </ListView>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    android:layout_margin="18dp"
+                    android:dividerHeight="15dp"
+                    android:divider="#ffffff"
+                    android:id="@+id/event_listview2">
+
+                </ListView>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="510dp"
+                    android:layout_margin="18dp"
+                    android:dividerHeight="15dp"
+                    android:divider="#ffffff"
+                    android:id="@+id/event_listview3">
+
+                </ListView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <ListView
+                    android:layout_width="match_parent"
+                    android:id="@+id/toilet_information_list0"
+                    android:dividerHeight="15dp"
+                    android:focusable="false"
+                    android:background="#F6F6F6"
+
+                    android:divider="#ffffff"
+                    android:layout_height="wrap_content">
+                </ListView>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:id="@+id/toilet_information_list"
+                    android:dividerHeight="15dp"
+                    android:focusable="false"
+                    android:background="#F6F6F6"
+
+                    android:divider="#ffffff"
+                    android:layout_height="340dp">
+                </ListView>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:id="@+id/toilet_information_list2"
+                    android:dividerHeight="15dp"
+                    android:focusable="false"
+                    android:background="#F6F6F6"
+
+                    android:divider="#ffffff"
+                    android:layout_height="900dp">
+                </ListView>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:id="@+id/toilet_information_list3"
+                    android:dividerHeight="15dp"
+                    android:focusable="false"
+                    android:background="#F6F6F6"
+
+                    android:divider="#ffffff"
+                    android:layout_height="1200dp">
+                </ListView>
+
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>
+   </ScrollView>
+
+
+</LinearLayout>

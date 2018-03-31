@@ -1,0 +1,40 @@
+<resources>
+
+    <string name="facebook_app_id">1837846493197147</string>
+    <string name="fb_login_protocol_scheme">fb1837846493197147</string>
+
+    <string name="app_name">FindRest</string>
+    <string name="action_settings">Settings</string>
+    <string name="save">Save</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">홈</string>
+    <string name="nav_myinfo">내정보</string>
+    <string name="nav_settings">설정</string>
+    <string name="nav_movies">Movies</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_about_us">About Us</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>홈</item>
+        <item>내정보</item>
+        <item>설정</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_inquire">관리자 문의</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

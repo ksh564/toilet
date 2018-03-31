@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="toilet">
+        <item>남녀분리화장실</item>
+        <item>남자전용화장실</item>
+        <item>여성전용화장실</item>
+        <item>남녀공용화장실</item>
+    </string-array>
+
+    <string-array name="Aname">
+        <item>공중화장실</item>
+        <item>개방화장실</item>
+        <item>비개방화장실</item>
+        <item>공공청사화장실</item>
+        <item>지하철화장실</item>
+    </string-array>
+
+
+    <string-array name="radius">
+
+        <item>100m</item>
+        <item>500m</item>
+        <item>1000m</item>
+        <item>2000m</item>
+    </string-array>
+
+    <string-array name="event_radius">
+        <item>100m</item>
+        <item>500m</item>
+        <item>1000m</item>
+    </string-array>
+
+    <string-array name="event_state">
+        <item>진행중</item>
+        <item>완료</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "143534156023",
+    "firebase_url": "https://test1-a80df.firebaseio.com",
+    "project_id": "test1-a80df",
+    "storage_bucket": "test1-a80df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143534156023:android:060fd0f160479beb",
+        "android_client_info": {
+          "package_name": "org.androidtown.findrest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143534156023-tkuvcpnsf8hpfh6n3naeh9g349tskuda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC33CbyqXd_T4EQ4_D0dF7z02tWdVl3kRU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
